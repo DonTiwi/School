@@ -308,7 +308,7 @@ function drawGameOver() {
 
 // UTILITY FUNCTIONS ----------------------------------------------------------
 
-// CHEAT KEYS -------------------------------------------------------------------
+// CHEAT KEYS 
 document.addEventListener("keydown", function (e) {
   if (!gameActive) return;
   if (e.key === "l" || e.key === "L") {
