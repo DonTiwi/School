@@ -1,5 +1,6 @@
 const numArr = [29, 38, 10, 60, 50, 28, 15, 90, 75, 288];
 
+// Task 1
 function printArr(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(`#${i + 1} => ${arr[i]}`);
@@ -8,6 +9,7 @@ function printArr(arr) {
 
 printArr(numArr);
 
+// Task 2
 function insertAt(arr, index, value) {
   const newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -21,6 +23,7 @@ function insertAt(arr, index, value) {
 
 console.log(insertAt(numArr, 3, 1000));
 
+// Task 3
 function sliceManual(arr, start, end) {
   if (start < 0 || start >= arr.length) {
     return [];
@@ -41,3 +44,6 @@ function sliceManual(arr, start, end) {
 
 let slice = sliceManual(numArr, 2);
 console.log(slice);
+
+// Task 4
+function merge(arr1, arr2) {}
