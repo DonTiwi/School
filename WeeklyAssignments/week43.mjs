@@ -9,8 +9,9 @@ const pizzas = [
 ];
 
 function pizzaCounter(pizzaArr) {
+  const tmpArr = {};
   for (let i = 0; i < pizzaArr.length; i++) {
-    console.log(pizzaArr[i]);
+    let currentPizza = pizzaArr[i];
   }
 }
 
