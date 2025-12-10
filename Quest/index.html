@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Tiny5&display=swap');
+    </style>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #tools {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="canvas" width="640" height="480" style="background-color: #000;"></canvas>
+        <div id="tools">
+            <button id="debug">DEBUG</button>
+        </div>
+    </div>
+    <script src="./game.mjs" type="module"></script>
+    <img src="./assets/full.png" data-sprite="base" style="display: none;">
+    <img src="./assets/heros.png" data-sprite="heros" style="display: none;">
+    <img src="./assets/monsters.png" data-sprite="monsters" style="display: none;">
+    <img src="./assets/items.png" data-sprite="items" style="display: none;">
+
+</body>
+
+</html>
